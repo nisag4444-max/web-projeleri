@@ -1,0 +1,54 @@
+body {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  transition: background 0.5s ease;
+}
+
+.mode {
+  width: 70px;
+  height: 35px;
+  border-radius: 50px;
+  background-color: black;
+  display: flex; /* EKLENDİ: Hizalama özelliklerinin çalışması için şart */
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  box-sizing: border-box;
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+/* Kapsayıcı ve elemanlar ayrı ayrı yazıldı (daha güvenli CSS yapısı) */
+.mode .moon {
+  color: #fff;
+  display: inline-block; /* EKLENDİ: span'ın width ve height değerlerini alabilmesi için */
+  width: 25px;
+  height: 25px;
+  background-image: url("./golden-crescent-moon-icon-vector-22314002.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mode .sun {
+  color: #fff;
+  display: inline-block; /* EKLENDİ: span'ın width ve height değerlerini alabilmesi için */
+  width: 25px;
+  height: 25px;
+  background-image: url("./golden-celestial-sun-icon-logo-frame-simple-vector-46330395.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mode .ball{
+    border-radius: 50px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    transition: all 0.5s;
+}
